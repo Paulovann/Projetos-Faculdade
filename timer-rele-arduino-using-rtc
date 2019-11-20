@@ -1,11 +1,9 @@
-```
-
-//ESSE CÓDIGO CONFIGURA A ATICAÇÃO DE RE UM RELÉ A PARTIR DE UM HORÁRIO DEFINIDO
+```//ESSE CÓDIGO CONFIGURA A ATIVAÇÃO DE UM RELÉ A PARTIR DE UM HORÁRIO PRÉ-DEFINIDO
 #include <Wire.h> //INCLUSÃO DA BIBLIOTECA
 #include "RTClib.h" //INCLUSÃO DA BIBLIOTECA
 #define Relay 4
 
-RTC_DS3231 rtc; //OBJETO DO TIPO RTC_DS3231
+RTC_DS3231 rtc; //DECLARA O MÓDULO RTC_DS3231
 
 //DEFINIÇÃO DO HORÁRIO A ATIVAR O RELÉ
 
@@ -19,7 +17,7 @@ const int OffMin = 30;
 char daysOfTheWeek[7][12] = {"Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"};
 
 void setup(){
-  Serial.begin(9600); //INICIALIZA A SERIAL
+  Serial.begin(9600); //FREQUÊNCIA DO SERIAL
   pinMode(Relay, OUTPUT);
   digitalWrite(Relay, HIGH);
   
@@ -65,5 +63,4 @@ void loop () {
       Serial.println("LIGHT OFF");
     }
     
-}
-```
+}```
