@@ -1,4 +1,4 @@
-'
+```
 
 //ESSE CÓDIGO CONFIGURA A ATICAÇÃO DE RE UM RELÉ A PARTIR DE UM HORÁRIO DEFINIDO
 #include <Wire.h> //INCLUSÃO DA BIBLIOTECA
@@ -65,4 +65,5 @@ void loop () {
       Serial.println("LIGHT OFF");
     }
     
-}'
+}
+```
