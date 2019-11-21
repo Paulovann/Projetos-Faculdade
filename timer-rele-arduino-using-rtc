@@ -55,7 +55,7 @@ void loop () {
 
 
   if(now.hour() == OnHour && now.minute() == OnMin){        //DEFINE QUE O RELÉ SERÁ ATIVADO CASO O HORÁRIO DO ARDUINO SEJA O DEFINIDO
-      digitalWrite(Relay,LOW)
+      digitalWrite(Relay,LOW);
       Serial.println("LIGHT ON");
     }
     
